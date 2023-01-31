@@ -368,7 +368,7 @@ img {
 
 /* ======================== /CUSTOMERS======================== */
 
-/* ======================== footer ======================== */
+/* ======================== FOOTER ======================== */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -458,7 +458,7 @@ footer-form-input::placeholder {
 .footer-subscribe-btn:focus {
   background-color: var(--active-primari-color);
 }
-/* ======================== /footer======================== */
+/* ======================== /FOOTER ======================== */
 
 /* ======================== PORTFOLIO ======================== */
 .portfolio {
@@ -545,6 +545,7 @@ footer-form-input::placeholder {
 /* ==================== overlay ======================= */
 
 /* ======================== /PORTFOLIO ======================== */
+
 
 /* =================== modal window ======================*/
 .backdrop {
@@ -701,6 +702,8 @@ footer-form-input::placeholder {
 .span-check {
   position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 16px;
@@ -708,10 +711,7 @@ footer-form-input::placeholder {
 
   border: 1.25px solid var(--title-color);
   border-radius: 2px;
-  
 
-  align-items: center;
-  justify-content: center;
   transition: border-color var(--transform-time-cubic), outline-color var(--transform-time-cubic) ;
 }
 .modal-form-policy:focus ~ .modal-form-check>.span-check {
@@ -729,7 +729,6 @@ footer-form-input::placeholder {
   background-color: var(--active-primari-color);
   border: 1.25px solid var(--active-primari-color);
   border-radius: 2px;
-  
 }
 
 
