@@ -131,9 +131,11 @@ img {
 }
 .list-address-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .top-line-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .list-item-container {
@@ -278,6 +280,8 @@ img {
 .list-opportunity {
   display: flex;
   align-self: center;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: space-between;
 }
 
