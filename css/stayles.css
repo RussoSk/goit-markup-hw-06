@@ -119,6 +119,7 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--accent-color);
+
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -191,16 +192,17 @@ img {
 
 /* ======================== HERO ======================== */
 .hero {
-  background-color: #2e2f42b2;
-  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-
   margin-left: auto;
   margin-right: auto;
-  background-size: cover;
+
+  text-align: center;
   max-width: 1440px;
   height: 600px;
+  background-color: #2e2f42b2;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -214,6 +216,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 500px;
+
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 48px;
@@ -221,10 +224,10 @@ img {
 .main-button {
   background-color: var(--primary-color);
   color: #ffffff;
-
-  padding: 16px 32px;
   border-radius: 4px;
 
+  padding: 16px 32px;
+  
   transition: background-color var(--transform-time-cubic),
     box-shadow var(--transform-time-cubic);
 }
@@ -255,6 +258,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
+
   margin-bottom: 8px;
 }
 
@@ -424,6 +428,7 @@ img {
 }
 .footer-form-input {
   padding: 8px 16px;
+  
   min-width: 264px;
   height: 40px;
   outline: none;
