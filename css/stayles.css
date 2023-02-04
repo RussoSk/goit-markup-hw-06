@@ -41,7 +41,7 @@ img {
   max-width: 100%;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -212,6 +212,7 @@ img {
 }
 .main-title {
   font-size: 56px;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -227,7 +228,7 @@ img {
   border-radius: 4px;
 
   padding: 16px 32px;
-  
+
   transition: background-color var(--transform-time-cubic),
     box-shadow var(--transform-time-cubic);
 }
@@ -243,14 +244,17 @@ img {
 
 .list-peculiarities {
   display: flex;
-  align-self: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
-.item-peculiarities {
-  width: 264px;
+.peculiarities-card {
+  display: flex;
+  flex-direction: column;
 }
-.item-peculiarities:not(:nth-child(4)) {
+
+/* .peculiarities-card:not(:nth-child(4)) {
   margin-right: 24px;
-}
+} */
 .box-icon {
   display: flex;
   width: 264px;
@@ -261,7 +265,9 @@ img {
 
   margin-bottom: 8px;
 }
-
+.item-pecularities-tumb {
+  max-width: 264px;
+}
 /* ======================== /PECULARITIES ======================== */
 
 /* ======================== OPPORTUNITY======================== */
@@ -341,6 +347,7 @@ img {
 
 .list-customers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 24px;
 }
@@ -382,9 +389,13 @@ img {
 }
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .sub-logo {
   color: #f4f4fd;
+}
+.footer-title {
+  margin-right: 120px;
 }
 .base-text-white {
   color: var(--accent-color);
@@ -396,7 +407,7 @@ img {
   margin-top: 16px;
 }
 .footer-social-media {
-  margin-left: 120px;
+  margin-right: 80px;
 }
 .footer-list-icon-social {
   display: flex;
@@ -419,16 +430,15 @@ img {
   background-color: #31d0aa;
 }
 
-.footer-subscribe {
-  margin-left: 80px;
-}
 .footer-email {
   display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin-top: 8px;
 }
 .footer-form-input {
   padding: 8px 16px;
-  
+
   min-width: 264px;
   height: 40px;
   outline: none;
@@ -459,7 +469,6 @@ img {
   display: inline-flex;
   gap: 16px;
   border: none;
-  margin-left: 24px;
   background-color: var(--primary-color);
   border-radius: 4px;
   color: #ffffff;
@@ -507,8 +516,8 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   transition: color var(--transform-time-cubic),
-  background-color var(--transform-time-cubic),
-  box-shadow var(--transform-time-cubic);
+    background-color var(--transform-time-cubic),
+    box-shadow var(--transform-time-cubic);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -567,7 +576,6 @@ img {
 
 /* ======================== /PORTFOLIO ======================== */
 
-
 /* =================== modal window ======================*/
 .backdrop {
   position: fixed;
@@ -591,7 +599,7 @@ img {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  
+
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -741,25 +749,28 @@ img {
   border: 1.25px solid var(--title-color);
   border-radius: 2px;
 
-  transition: border-color var(--transform-time-cubic), outline-color var(--transform-time-cubic) ;
+  transition: border-color var(--transform-time-cubic),
+    outline-color var(--transform-time-cubic);
 }
-.modal-form-policy:focus ~ .modal-form-check>.span-check {
+.modal-form-policy:focus ~ .modal-form-check > .span-check {
   outline: 1px solid rgba(46, 47, 66, 1);
 }
-.modal-form-policy:checked ~ .modal-form-check>.span-check {
+.modal-form-policy:checked ~ .modal-form-check > .span-check {
   border-color: var(--active-primari-color);
-  outline-color:rgba(46, 47, 66, 0);
+  outline-color: rgba(46, 47, 66, 0);
 }
 .modal-check-svg {
   display: inline-block;
   transition: background-color var(--transform-time-cubic);
 }
-.modal-form-policy:checked ~ .modal-form-check>.span-check>.modal-check-svg {
+.modal-form-policy:checked
+  ~ .modal-form-check
+  > .span-check
+  > .modal-check-svg {
   background-color: var(--active-primari-color);
   border: 1.25px solid var(--active-primari-color);
   border-radius: 2px;
 }
-
 
 /* chekbox var 2 */
 /* .modal-form-check-desc::before {
@@ -792,7 +803,7 @@ img {
 
   background-color: var(--primary-color);
   color: #ffffff;
-  
+
   padding: 14px 32px;
   min-width: 169px;
   border-radius: 4px;
